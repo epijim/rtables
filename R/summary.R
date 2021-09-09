@@ -114,7 +114,7 @@ col_paths_summary <- function(x) {
     t(apply(pagdf, 1, function(xi) {
       c(
         indent_string(xi$label, floor(length(xi$path)/2 - 1)),
-        paste(xi$path, collapse = ", ")
+        paste(xi$path, collapse=", ")
       )
     }))
   )
